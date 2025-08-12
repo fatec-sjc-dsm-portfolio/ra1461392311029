@@ -191,10 +191,13 @@ a:hover {
 }
 
 .tech-tags span {
-    background-color: #e0e0e0;
-    color: #333;
+    background-color: rgb(24, 7, 34);
+    color: #f5e3f6;
     font-size: 0.85rem;
     padding: 4px 10px;
     border-radius: 12px;
-    user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }

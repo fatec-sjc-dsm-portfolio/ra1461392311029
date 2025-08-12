@@ -10,32 +10,31 @@
     <body>
         <div class="stars" id="stars"></div>
 
-        <!-- <header>
+        <header>
             <h1>Silmara Bittencourt</h1>
             <nav>
                 <a href="#sobre">Sobre</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#contato">Contato</a>
             </nav>
-        </header> -->
+        </header>
 
         <section class="hero">
             <h2>Olá, eu sou a Silmara</h2>
             <p>Crio experiências digitais incríveis, combinando código limpo e design elegante. Bem-vindo ao meu universo!</p>
-            <button class="btn" onclick="document.getElementById('projetos').scrollIntoView({behavior:'smooth'})">Ver Projetos</button>
         </section>
 
         <section id="sobre">
-            <h2>Sobre Mim</h2>
+            <h2 style="margin-bottom: 10px;">Sobre Mim</h2>
             <p>Sou estudante de desenvolvimento de software multiplataforma na FATEC prof. Jessen Vidal (São José dos Campos), atualmente estou cursando o último semestre do curso.</p>
             <p>Costumo atuar na área de desenvolvimento do front-end, desde a prototipação à estilização das páginas.</p>
             <p>Com experiência em ilustrações e design, busco sempre as interfaces mais intuitivas e inclusivas para os usuários, a possibilidade de proporcionar uma boa experiência para o cliente é o que me faz preferir o desenvolvimento front-end.</p>
             <p>Porém, planejo também me desenvolver melhor na parte de back-end nos próximos semestres, para que possa me tornar uma desenvolvedora full-stack.</p>
-            <p>Sou uma programadora web em PHP com Laravel, estagiando na Pândo Apps desde julho de 2024.</p>
+            <p>Trabalho como programadora web em PHP utilizando o framework Laravel, estagiando na Pandô Apps desde julho de 2024.</p>
         </section>
 
         <section id="projetos">
-            <h2>Projetos</h2>
+            <h2>Principais projetos (API's)</h2>
             <div style="margin-top: 20px;" class="projects">
                 <div class="project" id="projeto1">
                     <h3>1º Semestre • 01/2023 • Consulta-vid</h3>
@@ -72,11 +71,67 @@
 
     <!-- Modals -->
      
-    <div id="modal" class="modal" style="display:none;">
-        <div class="modal-content">
-            <span id="close-modal" class="close">&times;</span>
-            <h3>Detalhes do Projeto 1</h3>
-            <p>Aqui você pode colocar detalhes extras sobre o projeto, como tecnologias usadas, desafios, etc.</p>
+    <div id="modal" class="modal" style="display:none; position: fixed; top:0; left:0; width: 100vw; height: 100vh; background: rgba(9, 1, 21, 0.95); color: #d6b3f3; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; z-index: 9999; overflow: auto;">
+        <div class="modal-content" style="max-width: 900px; margin: 3rem auto; background: #1a0f3a; border-radius: 12px; padding: 20px 30px; display: flex; gap: 30px; box-shadow: 0 0 15px #7a39c9;">
+            <span id="close-modal" class="close" style="font-size: 32px; font-weight: bold; cursor: pointer; color: #b288d6; position: absolute; right: 30px; top: 20px;">&times;</span>
+
+            <div style="flex: 1; overflow-y: auto; max-height: 80vh;">
+                <h3 style="color: #dcb3ff; font-weight: 700; margin-bottom: 1rem;">Visão do projeto</h3>
+                <p style="line-height: 1.5; margin-bottom: 1rem;">
+                    Projeto desenvolvido por alunos do 1º semestre do curso de Desenvolvimento de Software Multiplatafora, da Fatec São José dos Campos - Prof. Jessen Vidal. Consiste na criação de uma aplicação web que permite a análise de dados sobre a covid longa nas cidades de cobertura da Vanguarda, a fim de entender o impacto dessa condição no sistema de saúde das maiores cidades do Vale do Paraíba. Back-end do projeto desenvolvido em Python3+ utilizando o microframework flask e o MySQL para gerenciar o banco de dados.
+                </p>
+                <p style="line-height: 1.5; margin-bottom: 1rem;">
+                    O produto é voltado para profissionais da área de saúde, pesquisadores e público em geral interessado em entender o impacto da covid longa no sistema de saúde das maiores cidades do Vale do Paraíba, a aplicação web ajuda os usuários que desejam ter acesso a dados precisos e atualizados sobre a covid longa nas cidades da região, a fim de entender melhor essa condição e seu impacto na saúde pública. Ao contrário de outros sistemas que podem apresentar dados genéricos sobre a covid-19, esse se concentra especificamente na análise de dados da Covid Longa nas cidades de cobertura da Vanguarda, nosso produto elabora informações detalhadas , incluindo dados sobre casos, hospitalizações, sintomas, tratamentos e outros aspectos relevantes para a compreensão da condição e seus efeitos no sistema de saúde da região. Com base nesses dados, o produto deve ajudar os usuários a entender melhor a Covid Longa e desenvolver estratégias para enfrentá-la de forma eficaz.
+                </p>
+
+                <h3 style="color: #dcb3ff; font-weight: 700; margin-top: 1.5rem;">Tecnologias adotadas</h3>
+                <ul style="margin-left: 1.2rem; margin-bottom: 1rem; line-height: 1.5;">
+                    <li>Python.</li>
+                    <li>HTML & CSS.</li>
+                    <li>Flask.</li>
+                    <li>Bootstrap.</li>
+                    <li>MySQL.</li>
+                    <li>GitHub.</li>
+                    <li>Figma.</li>
+                </ul>
+
+                <h3 style="color: #dcb3ff; font-weight: 700; margin-top: 1.5rem;">Contribuições pessoais</h3>
+                <p style="line-height: 1.5; margin-bottom: 1rem;">
+                    Como minha primeira experiência de programação, foi um grande desafio o desenvolvimento desse projeto, tanto por exercer do trabalho de P.O. quanto por ter pego a parte de front-end quase por inteiro, o que me fez ter de aprender a mexer nas ferramentas principais, a parte de prototipação e de quais perguntas deveriam ser feitas(algo que tive muita dificuldade). Porém, para o que tinha em mãos no momento, acredito que tenha sido melhor o que pude fazer, mas atualmente, vejo que poderia refazê-lo ainda melhor.
+                </p>
+                <ul style="margin-left: 1.2rem; margin-bottom: 1rem; line-height: 1.5;">
+                    <li>Construção do wireframe do projeto.</li>
+                    <li>Construção do front-end da aplicação.</li>
+                    <li>Documentação do projeto e comunicação com o cliente(função de product owner).</li>
+                </ul>
+
+                <h3 style="color: #dcb3ff; font-weight: 700; margin-top: 1.5rem;">Aprendizados</h3>
+                <p style="font-weight: 600;">Soft Skills:</p>
+                <ul style="margin-left: 1.2rem; margin-bottom: 1rem; line-height: 1.5;">
+                    <li>Comunicação com o cliente: desenvolvido devido à função de P.O.</li>
+                    <li>Falar em público: desenvolvido devido às apresentações das sprints.</li>
+                </ul>
+                <p style="font-weight: 600;">Hard Skills:</p>
+                <ul style="margin-left: 1.2rem; margin-bottom: 1rem; line-height: 1.5;">
+                    <li>Programação em Python: sei fazer com autonomia.</li>
+                    <li>Programação em MySQL: sei fazer com auxilio de consulta.</li>
+                    <li>Aprendizado de utilização do Figma: sei fazer com autonomia.</li>
+                    <li>Desenvolvimento com o flask, html e css, além de estilzação com o bootstrap: sei fazer com autonomia.</li>
+                    <li>Aprendizado de como utilizar o github: sei fazer com autonomia.</li>
+                </ul>
+
+                
+            </div>
+
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; max-height: 80vh;">
+                <img src="static/videos/api1.gif" style="width: 100%; border-radius: 12px; box-shadow: 0 0 10px #7a39c9;" alt="Demonstração do projeto" />
+                
+                <a href="https://github.com/APIEquipe/EquipeTechEmpireAPI" target="_blank" rel="noopener" 
+                    style="margin-top: 20px; padding: 10px 20px; background-color: rgb(61, 25, 93); color: white; border: none; border-radius: 8px; text-decoration: none; font-weight: 600; cursor: pointer;">
+                    Acessar Projeto
+                </a>
+            </div>
+
         </div>
     </div>
 
