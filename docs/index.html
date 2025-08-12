@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portfólio de Programação - Desenvolvedor">
         <title>Silmara Bittencourt</title>
+        <link rel="icon" type="image/x-icon" href="static/img/favicon.png">
         <link rel="stylesheet" href="static/css/index.css">
     </head>
     <body>
@@ -20,17 +21,19 @@
         </header>
 
         <section class="hero">
-            <h2>Olá, eu sou a Silmara</h2>
-            <p>Crio experiências digitais incríveis, combinando código limpo e design elegante. Bem-vindo ao meu universo!</p>
+            <h2 id="typing-name"></h2>
+            <p id="typing-role"></p>
         </section>
 
-        <section id="sobre">
-            <h2 style="margin-bottom: 10px;">Sobre Mim</h2>
-            <p>Sou estudante de desenvolvimento de software multiplataforma na FATEC prof. Jessen Vidal (São José dos Campos), atualmente estou cursando o último semestre do curso.</p>
-            <p>Costumo atuar na área de desenvolvimento do front-end, desde a prototipação à estilização das páginas.</p>
-            <p>Com experiência em ilustrações e design, busco sempre as interfaces mais intuitivas e inclusivas para os usuários, a possibilidade de proporcionar uma boa experiência para o cliente é o que me faz preferir o desenvolvimento front-end.</p>
-            <p>Porém, planejo também me desenvolver melhor na parte de back-end nos próximos semestres, para que possa me tornar uma desenvolvedora full-stack.</p>
-            <p>Trabalho como programadora web em PHP utilizando o framework Laravel, estagiando na Pandô Apps desde julho de 2024.</p>
+       <section id="sobre" style="display: flex; align-items: flex-start; gap: 20px;">
+            <img src="static/img/pfp.png" alt="Minha foto" class="img" style="width: 200px; border-radius: 10px; object-fit: cover; margin-top: 20px;">
+            <div>
+                <h2 style="margin-bottom: 10px;">Sobre Mim</h2>
+                <p>Sou estudante de Desenvolvimento de Software Multiplataforma(DSM) na FATEC prof. Jessen Vidal (São José dos Campos), atualmente estou cursando o último semestre do curso.</p>
+                <p>Costumo atuar na área de desenvolvimento do front-end, desde a prototipação à estilização das páginas.</p>
+                <p>Com experiência em ilustrações e design, busco sempre as interfaces mais intuitivas e inclusivas para os usuários, a possibilidade de proporcionar uma boa experiência para o cliente é o que me faz preferir o desenvolvimento front-end.</p>
+                <p>Atuo como programadora web em PHP utilizando o framework Laravel, estagiando na Pandô Apps desde julho de 2024.</p>
+            </div>
         </section>
 
         <section id="projetos">
@@ -124,6 +127,8 @@
             </div>
 
             <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; max-height: 80vh;">
+                
+                <h2 style="margin-bottom: 20px;">Demonstração do sistema</h2>
                 <img src="static/videos/api1.gif" style="width: 100%; border-radius: 12px; box-shadow: 0 0 10px #7a39c9;" alt="Demonstração do projeto" />
                 
                 <a href="https://github.com/APIEquipe/EquipeTechEmpireAPI" target="_blank" rel="noopener" 
@@ -137,4 +142,5 @@
 
     <script src="static/js/estrelas.js"></script>
     <script src="static/js/modal.js"></script>
+    <script src="static/js/digitando.js"></script>
 </html>

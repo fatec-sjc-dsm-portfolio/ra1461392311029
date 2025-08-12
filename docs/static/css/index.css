@@ -71,6 +71,12 @@ nav a:hover {
     padding: 2rem;
 }
 
+.typing {
+    border-right: 2px solid #ffffff; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .hero h2 {
     font-size: 3rem;
     color: #ffb3ff;
@@ -120,11 +126,21 @@ section {
     padding: 1.5rem;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s;
+    transition: all 0.3s ease; 
 }
 
 .project:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(150, 0, 255, 0.6);
+}
+
+.img {
+    transition: all 0.3s ease; 
+}
+
+.img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(150, 0, 255, 0.6);
 }
 
 footer {
@@ -201,3 +217,4 @@ a:hover {
 html {
   scroll-behavior: smooth;
 }
+
