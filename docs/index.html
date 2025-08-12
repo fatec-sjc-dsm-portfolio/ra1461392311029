@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfólio de Programação - Desenvolvedor">
+        <title>Silmara Bittencourt</title>
+        <link rel="stylesheet" href="static/css/index.css">
+    </head>
+    <body>
+        <div class="stars" id="stars"></div>
+
+        <!-- <header>
+            <h1>Silmara Bittencourt</h1>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header> -->
+
+        <section class="hero">
+            <h2>Olá, eu sou a Silmara</h2>
+            <p>Crio experiências digitais incríveis, combinando código limpo e design elegante. Bem-vindo ao meu universo!</p>
+            <button class="btn" onclick="document.getElementById('projetos').scrollIntoView({behavior:'smooth'})">Ver Projetos</button>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Sou estudante de desenvolvimento de software multiplataforma na FATEC prof. Jessen Vidal (São José dos Campos), atualmente estou cursando o último semestre do curso.</p>
+            <p>Costumo atuar na área de desenvolvimento do front-end, desde a prototipação à estilização das páginas.</p>
+            <p>Com experiência em ilustrações e design, busco sempre as interfaces mais intuitivas e inclusivas para os usuários, a possibilidade de proporcionar uma boa experiência para o cliente é o que me faz preferir o desenvolvimento front-end.</p>
+            <p>Porém, planejo também me desenvolver melhor na parte de back-end nos próximos semestres, para que possa me tornar uma desenvolvedora full-stack.</p>
+            <p>Sou uma programadora web em PHP com Laravel, estagiando na Pândo Apps desde julho de 2024.</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div style="margin-top: 20px;" class="projects">
+                <div class="project" id="projeto1">
+                    <h3>1º Semestre • 01/2023 • Consulta-vid</h3>
+                    <p>Projeto desenvolvido por alunos do 1º semestre do curso de Desenvolvimento de Software Multiplataforma da Fatec São José dos Campos – Prof. Jessen Vidal. A aplicação web analisa dados da covid longa nas cidades do Vale do Paraíba, ajudando profissionais de saúde, pesquisadores e o público em geral a entenderem seu impacto no sistema de saúde local. O back-end usa Python com Flask e MySQL para gerenciar os dados. A plataforma oferece informações detalhadas sobre casos, hospitalizações, sintomas e tratamentos, focando na covid longa para apoiar estratégias eficazes de enfrentamento.</p>
+                
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>HTML &amp; CSS</span>
+                        <span>Flask</span>
+                        <span>Bootstrap</span>
+                        <span>MySQL</span>
+                        <span>GitHub</span>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:silmarabittencourt13@gmail.com">silmarabittencourt13@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/SBittencourt" target="_blank">@SBittencourt</a></p>
+            <p>GitLab: <a href="https://gitlab.com/SBittencourt" target="_blank">@SBittencourt</a></p>
+
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Silmara Bittencourt. Todos os direitos reservados.</p>
+        </footer>
+
+    
+    </body>
+
+    <!-- Modals -->
+     
+    <div id="modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h3>Detalhes do Projeto 1</h3>
+            <p>Aqui você pode colocar detalhes extras sobre o projeto, como tecnologias usadas, desafios, etc.</p>
+        </div>
+    </div>
+
+    <script src="static/js/estrelas.js"></script>
+    <script src="static/js/modal.js"></script>
+</html>
