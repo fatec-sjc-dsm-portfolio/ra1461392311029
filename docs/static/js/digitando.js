@@ -18,5 +18,4 @@ const roleElement = document.getElementById("typing-role");
 
 // Aplica o efeito
 typeEffect(nameElement, "Silmara Bittencourt", 100, function() {
-    typeEffect(roleElement, "Desenvolvedora Full-Stack | PHP | Laravel", 80);
 });
