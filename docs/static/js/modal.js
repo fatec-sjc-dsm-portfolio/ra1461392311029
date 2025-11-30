@@ -55,7 +55,7 @@ window.addEventListener('click', (event) => {
     }
 });
 
-// Modal pro projeto 3
+// Modal pro projeto 4
 const modal4 = document.getElementById('modal4');
 const projeto4 = document.getElementById('projeto4');
 const closeModal4 = document.getElementById('close-modal4');
@@ -71,6 +71,44 @@ closeModal4.addEventListener('click', () => {
 window.addEventListener('click', (event) => {
     if(event.target == modal4) {
         modal4.style.display = 'none';
+    }
+});
+
+// Modal pro projeto 5
+const modal5 = document.getElementById('modal5');
+const projeto5 = document.getElementById('projeto5');
+const closeModal5 = document.getElementById('close-modal5');
+
+projeto5.addEventListener('click', () => {
+    modal5.style.display = 'block';
+});
+
+closeModal5.addEventListener('click', () => {
+    modal5.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if(event.target == modal5) {
+        modal5.style.display = 'none';
+    }
+});
+
+// Modal pro projeto 6
+const modal6 = document.getElementById('modal6');
+const projeto6 = document.getElementById('projeto6');
+const closeModal6 = document.getElementById('close-modal6');
+projeto6.addEventListener('click', () => {
+    modal6.style.display = 'block';
+}
+);
+
+closeModal6.addEventListener('click', () => {
+    modal6.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if(event.target == modal6) {
+        modal6.style.display = 'none';
     }
 });
 
