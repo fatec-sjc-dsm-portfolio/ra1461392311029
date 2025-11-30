@@ -55,3 +55,22 @@ window.addEventListener('click', (event) => {
     }
 });
 
+// Modal pro projeto 3
+const modal4 = document.getElementById('modal4');
+const projeto4 = document.getElementById('projeto4');
+const closeModal4 = document.getElementById('close-modal4');
+
+projeto4.addEventListener('click', () => {
+    modal4.style.display = 'block';
+});
+
+closeModal4.addEventListener('click', () => {
+    modal4.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if(event.target == modal4) {
+        modal4.style.display = 'none';
+    }
+});
+
